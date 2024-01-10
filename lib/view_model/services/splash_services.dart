@@ -13,7 +13,7 @@ class SplashServices{
     String? uid=pref.getString('TOKEN');
     Timer(const Duration(milliseconds: 2000), () {
       if(uid==null){
-        Get.to(SignUp());
+        Get.to(SignUp()); //GetX Package to route
       }else{
         final homeController=Get.put(HomeController());
         final newTaskController=Get.put(NewTaskController());
