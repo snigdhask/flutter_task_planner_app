@@ -23,7 +23,7 @@ class BottomNavBar extends StatelessWidget {
       notchSmoothness: NotchSmoothness.verySmoothEdge,
       leftCornerRadius: 32,
       rightCornerRadius: 32,
-      onTap: (index){controller.barIndex.value=index;},
+      onTap: (index){controller.barIndex.value=index;Navigator.pushReplacement(context, MaterialPageRoute(builder: (index) => HomePage(),));}
       //other params
     ),);
   }
